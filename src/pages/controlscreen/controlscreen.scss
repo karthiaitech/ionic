@@ -1,0 +1,107 @@
+page-controlscreen {
+        // .footer{
+        //     button{
+        //         margin-bottom: 0px;
+        //     }
+        // }
+        footer{
+            position: relative;
+           }
+           html,body {
+               height: 100%; /* Needed for container's min-height  */  
+           }
+           
+           .container{
+               min-height:100%;
+               margin-bottom: -40px; /* Put negative height of the footer here */
+               padding-bottom: 40px; /* Put height of the footer here. Needed for higher than screen height pages */
+           }
+        ion-content{
+            background-image: url('../../assets/imgs/background.png');
+            background-repeat: no-repeat;
+            background-size:cover;
+            font-weight: 100;
+        }
+        ion-header ion-icon.back-button-icon.icon, span.back-button-text.back-button-text-ios {
+            color: map-get($colors, dark);
+        }
+     
+          ion-title {
+            position: absolute;
+            top: 0;
+            left: 0;
+            padding: 10 90px 1px;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+          }
+          ion-navbar{
+            background-color : #52BD8F;
+          }
+          .toolbar-background-ios{
+            background-color : #52BD8F;
+          }
+      .toolbar-background-md, .toolbar-background-ios,.toolbar-background-wp {
+            background-color: color($colors,'primary');
+        }
+        .toolbar-ios ion-title{
+            padding: 0 0 1px;
+        }
+        .button{
+                background-color: #52BD8F;
+                color: black;
+        }
+        .item{
+            background-color:transparent !important;
+            color: black;
+    }
+    .toggle-wrapper {
+        display: inline-block;
+        width: 100%;
+        margin-bottom: 0;
+        height:50px;
+        margin-top: 0;
+        position: relative;
+        left:0;
+      }
+      .toolbar-background-ios{
+          width: 10px;
+          height: 20px;
+      }
+        .toggle-ios.toggle-checked .toggle-icon {
+            background-color: #52BD8F;
+            top: 5px;
+            width: 50px;
+            height: 32px;
+        }
+        .toggle-ios .toggle-icon {
+            background-color: #c8dcff;
+             left: -4px;
+             top: 5px;
+            width: 50px;
+            height: 32px;
+        }
+        page-controlscreen .toggle-ios.meds-toggle {
+            background-color: #52BD8F;
+            width: 10px;
+            float: right;
+            height: 36px;
+        }
+        .toggle-md.toggle-checked .toggle-icon {    
+            background-color: #52BD8F;
+            height: 13px;
+            width: 35px;
+        }
+        .toggle-md .toggle-icon {
+            background-color: #c8dcff;
+            top: -8px;
+            left: 5px;
+            height: 13px;
+            width: 35px;
+        }
+        ion-list .col-3 {padding-left: 0; padding-right: 0;}
+        .text-input-ios {
+            margin: 5px 4px 5px 4px;}
+            .text-input-ios::placeholder{color: red; word-break: break-all; white-space: normal;}
+        
+}

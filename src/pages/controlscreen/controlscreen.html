@@ -1,0 +1,129 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+<ion-header>
+    <ion-navbar>
+        <ion-title style="font-size:15px;">
+            CONTROL SCREEN
+        </ion-title>
+    </ion-navbar>
+</ion-header>
+<ion-content padding>
+    <ion-list style="margin-bottom: 10px;">
+        <div class="row" style="text-align: center; width: auto; height: 80px;">
+            <div class="col col-60">
+                <img src="../../assets/imgs/two-pounds-logo-sm.png" style="height: 80px;">
+            </div>
+            <div class="col col-40" style="color:#52BD8F;text-align: center; padding-top: 48px;">Control</div>
+        </div>
+    </ion-list>
+    <ion-list style=" width:90%;margin:0 5%; margin-bottom: 10px;">
+        <div class="row" style="border: solid 2px #52BD8F;">
+            <div class="col col-6" style="float:left; text-align: center; color:#52BD8F; border-right: solid 2px #52BD8F; padding: 5px;">Function</div>
+            <div class="col col-3" style="color:#52BD8F; text-align: center; border-right: solid 2px; padding: 5px;">Value</div>
+            <div class="col col-3" style="color:#52BD8F;text-align: center; padding: 5px;">Selector</div>
+        </div>
+    </ion-list>
+    <ion-list style="margin-bottom: 10px;width:90%;margin:0 5%">
+        <div class="row" style="border: solid 2px #52BD8F;margin-top: -2px;">
+            <div  class="col col-6" style="float:left; align-content: center; text-align: center; color:#52BD8F; border-right: solid 2px #52BD8F; padding: 5px;">Toggle
+                Switch 1</div>
+            <div class="col col-3" style="color:#52BD8F; text-align: center; border-right: solid 2px; padding: 5px;">Continous
+                Top</div>
+            <div  class="col col-3 toggle-wrapper" style="color:#52BD8F;text-align: center; margin-bottom: 03%;padding: 10px;">
+                <ion-input [(ngModel)]="Toggle_Switch_1" type="number"  placeholder="Toggle Switch 1"  (keyup.enter)="setFocus(b)"></ion-input>
+            </div>
+        </div>
+        <div class="row" style="border: solid 2px #52BD8F;margin-top: -2px;">
+            <div class="col col-6" style="float:left; text-align: center; color:#52BD8F; border-right: solid 2px #52BD8F; padding: 5px;">Toggle
+                Switch 2</div>
+            <div class="col col-3" style="color:#52BD8F; text-align: center; border-right: solid 2px; padding: 5px;">Rash
+                Bottom</div>
+            <div class="col col-3 toggle-wrapper" style="color:#52BD8F;text-align: center; margin-bottom: 03%;padding: 10px;">
+                <ion-input [(ngModel)]="Toggle_Switch_2" type="number" placeholder="Toggle Switch 2" #b (keyup.enter)="setFocus(c)"></ion-input>
+            </div>
+        </div>
+        <div class="row" style="border: solid 2px #52BD8F;margin-top: -2px;">
+            <div class="col col-6" style="float:left; text-align: center; color:#52BD8F; border-right: solid 2px #52BD8F; padding: 5px;">Unit
+                State</div>
+            <div class="col col-3" style="color:#52BD8F; text-align: center; border-right: solid 2px;">All Rashing</div>
+            <div class="col col-3" style="color:#52BD8F;text-align: center;">
+                <ion-input [(ngModel)]="Unit_State" type="number" placeholder="Unit State"  #c (keyup.enter)="setFocus(d)" ></ion-input>
+            </div>
+        </div>
+        <div class="row" style="border: solid 2px #52BD8F;margin-top: -2px;">
+            <div class="col col-6" style="float:left; text-align: center; color:#52BD8F; border-right: solid 2px #52BD8F; padding: 5px;">Phase
+                Delay</div>
+            <div class="col col-3" style="color:#52BD8F; text-align: center; border-right: solid 2px; padding: 5px;">100MS</div>
+            <div class="col col-3" style="color:#52BD8F;text-align: center;">
+                <ion-input [(ngModel)]="Phase_Delay" type="number" placeholder="Phase Delay" #d (keyup.enter)="setFocus(e)"></ion-input>
+            </div>
+        </div>
+        <div class="row" style="border: solid 2px #52BD8F;margin-top: -2px;">
+            <div class="col col-6" style="float:left; text-align: center; color:#52BD8F; border-right: solid 2px #52BD8F; padding: 5px;">Flash-Time
+                Top</div>
+            <div class="col col-3" style="color:#52BD8F; text-align: center; border-right: solid 2px; padding: 5px;">10%</div>
+            <div class="col col-3" style="color:#52BD8F;text-align: center;">
+                <ion-input [(ngModel)]="Flash_Time_Top" type="number" placeholder="flash-Time Top"  #e (keyup.enter)="setFocus(f)"></ion-input>
+            </div>
+        </div>
+        <div class="row" style="border: solid 2px #52BD8F;margin-top: -2px;">
+            <div class="col col-6" style="float:left; text-align: center; color:#52BD8F; border-right: solid 2px #52BD8F; padding: 5px;">Flash-Time
+                Bottom</div>
+            <div class="col col-3" style="color:#52BD8F; text-align: center; border-right: solid 2px; padding: 5px;">10%</div>
+            <div class="col col-3" style="color:#52BD8F;text-align: center;">
+                <ion-input [(ngModel)]="Flash_Time_Bottom" type="number" placeholder="Flash-Time Bottom"  #f (keyup.enter)="setFocus(g)"></ion-input>
+            </div>
+        </div>
+        <div class="row" style="border: solid 2px #52BD8F;margin-top: -2px;">
+            <div class="col col-6" style="float:left; text-align: center; color:#52BD8F; border-right: solid 2px #52BD8F; padding: 5px;">Intencity
+                Flash Top</div>
+            <div class="col col-3" style="color:#52BD8F; text-align: center; border-right: solid 2px; padding: 5px;">90%</div>
+            <div class="col col-3" style="color:#52BD8F;text-align: center;">
+                <ion-input [(ngModel)]="Intencity_Flash_Top" type="number" placeholder="Intencity Flash Top"  #g (keyup.enter)="setFocus(h)"></ion-input>
+            </div>
+        </div>
+        <div class="row" style="border: solid 2px #52BD8F;margin-top: -2px;">
+            <div class="col col-6" style="float:left; text-align: center; color:#52BD8F; border-right: solid 2px #52BD8F; padding: 5px;">Intencity
+                Flash Bottom</div>
+            <div class="col col-3" style="color:#52BD8F; text-align: center; border-right: solid 2px; padding: 5px;">90%</div>
+            <div class="col col-3" style="color:#52BD8F;text-align: center;">
+                <ion-input [(ngModel)]="Intencity_Flash_Bottom" type="number" placeholder="Intencity Flash Bottom"  #h (keyup.enter)="setFocus(i)"></ion-input>
+            </div>
+        </div>
+        <div class="row" style="border: solid 2px #52BD8F;margin-top: -2px;">
+            <div class="col col-6" style="float:left; text-align: center; color:#52BD8F; border-right: solid 2px #52BD8F; padding: 5px;">Intencity
+                Continous Top </div>
+            <div class="col col-3" style="color:#52BD8F; text-align: center; border-right: solid 2px; padding: 5px;">10%</div>
+            <div class="col col-3" style="color:#52BD8F;text-align: center;">
+                <ion-input [(ngModel)]="Intencity_Continous_Top" type="number" placeholder="Intencity Continous Top"  #i (keyup.enter)="setFocus(j)"></ion-input>
+            </div>
+        </div>
+        <div class="row" style="border: solid 2px #52BD8F;margin-top: -2px;">
+            <div class="col col-6" style="float:left; text-align: center; color:#52BD8F; border-right: solid 2px #52BD8F; padding: 5px;">Intencity
+                Continous Bottom</div>
+            <div class="col col-3" style="color:#52BD8F; text-align: center; border-right: solid 2px; padding: 5px;">10%</div>
+            <div class="col col-3" style="color:#52BD8F;text-align: center;">
+                <ion-input [(ngModel)]="Intencity_Continous_Bottom" type="number" placeholder="Intencity Continous Bottom"  #j (keyup.enter)="setFocus(k)"></ion-input>
+            </div>
+        </div>
+        <div class="row" style="border: solid 2px #52BD8F;margin-top: -2px;">
+            <div class="col col-6" style="float:left; text-align: center; color:#52BD8F; border-right: solid 2px #52BD8F; padding: 5px;">Battery
+                Warning Level 1</div>
+            <div class="col col-3" style="color:#52BD8F; text-align: center; border-right: solid 2px; padding: 5px;">50%</div>
+            <div class="col col-3" style="color:#52BD8F;text-align: center;">
+                <ion-input [(ngModel)]="Battery_Warning_Level_1" type="number" placeholder="Battery Warning Level 1"  #k (keyup.enter)="setFocus(l)"></ion-input>
+            </div>
+        </div>
+        <div class="row" style="border: solid 2px #52BD8F;margin-top: -2px;">
+            <div class="col col-6" style="float:left; text-align: center; color:#52BD8F; border-right: solid 2px #52BD8F; padding: 5px;">Battery
+                Warning Level 2</div>
+            <div class="col col-3" style="color:#52BD8F; text-align: center; border-right: solid 2px; padding: 5px;">20%</div>
+            <div class="col col-3" style="color:#52BD8F;text-align: center;">
+                <ion-input [(ngModel)]="Battery_Warning_Level_2" type="number" placeholder="Battery Warning Level 2"  #l></ion-input>
+            </div>
+        </div>
+    </ion-list>
+</ion-content>
+<ion-footer class="hide-on-keyboard-open" padding class="footer">
+    <button ion-button block class="button" (click)="NextBtn()">Send Data</button>
+    <button ion-button block class="button" (click)="RootPage()">Go to Start Screen</button>
+</ion-footer>

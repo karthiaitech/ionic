@@ -1,0 +1,43 @@
+page-startscreen {
+    ion-content{
+        background-image: url('../../assets/imgs/background.png');
+        background-repeat: no-repeat;
+        background-size:cover;
+        font-weight: 100;
+    }
+    .LogoImage {
+        background: url('../../assets/imgs/two-pounds-logo.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        width: 80%;
+        height: 246px;
+        margin: auto;
+        margin-top: 15%;
+        z-index: 2;
+        position: relative;
+    }
+    .button{
+        background-color: #52BD8F;
+        color: black;
+    }
+    .gray{
+        background-color: #EBE5D9;
+       }
+       .white{
+         background-color: #FFFFFF;
+       }
+    //    .about-button {
+    //     text-align: center;
+    //     background-color: red;
+    //   }
+    .iboriti {
+        border: 1px solid #eee8d5;
+        pointer-events: none;
+        font-style: italic;
+        border-radius: 20px 0px 0px 0px;
+      }
+      .no-scroll .scroll-content{
+        overflow: hidden;
+    }
+}

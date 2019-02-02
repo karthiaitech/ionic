@@ -1,0 +1,37 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+
+<ion-header>
+    <ion-navbar>
+        <ion-title style="font-size:15px;text-align: center;">
+          CONNECT SCREEN
+        </ion-title>
+      </ion-navbar>
+</ion-header>
+<ion-content no-bounce padding >
+    <ion-list style="margin-bottom: 10px;">
+        <div class = "row" style="text-align: center; width: auto; height: 80px;">
+            <div class = "col col-60">  
+            <img src="/assets/imgs/two-pounds-logo-sm.png" style="height: 80px;">
+            </div>
+            <div class = "col col-40" style="color:#52BD8F;text-align: center; padding-top: 48px;"> Warning Lamp Units </div>
+        </div>   
+    </ion-list>
+  <ion-list style="width:90%;margin:0 5%;margin-bottom: 10px; ">   
+      <div class = "row" style="border: solid 2px #52BD8F;">
+          <div class = "col col-7" style="color:#52BD8F;text-align: center; border-right: solid 2px #52BD8F">Blutooth</div>
+           <!-- <div class = "col col-5" style="color:#fff;text-align: center;">On/Off</div>  -->
+           <div class = "col col-3 toggle-wrapper" style="color:#52BD8F;text-align: center; margin-bottom: 03%;padding: 10px;"><ion-toggle class="meds-toggle"
+            [(ngModel)]="isToggled" (ionChange)="notify()"> 
+   </ion-toggle></div>
+      </div>
+  </ion-list>
+
+  <ion-list style="width:100%; height: auto; max-height:65%; overflow-x: hidden; overflow-y:auto;border: solid 2px #52BD8F;"> 
+      <div class = "row" *ngFor="let item of devices"  style="border: solid 2px #52BD8F; margin-top: -2px; "  (click)="function2(item)">
+          <div class = "col col-7" style="color:#52BD8F; border-right: solid 2px #52BD8F; padding-left: 5%;">{{item.name == null ? item.id : item.name }}</div>
+          <div class = "col col-5" style="color:#fff;">{{item.status}}</div>
+      </div>  
+  </ion-list>
+<ion-footer padding class="footer">
+    <button ion-button block class = "button" (click)="startScan()">Re Scan</button>
+  </ion-footer>
