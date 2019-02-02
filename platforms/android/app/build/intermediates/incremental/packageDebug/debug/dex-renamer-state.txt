@@ -1,0 +1,4 @@
+#Fri Feb 01 18:53:47 IST 2019
+base.0=C\:\\Users\\AIT-02\\Desktop\\ChangedIonic\\ionic\\Latest\\WarningLampBLE\\WarningLampBLE\\platforms\\android\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
+path.0=classes.dex
+renamed.0=classes.dex
